@@ -1,0 +1,17 @@
+{
+  "name": "quinoa-starter",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --base=/quinoa",
+    "build": "vite build --base=/quinoa",
+    "preview": "vite preview --base=/quinoa",
+    "prod": "react-scripts build --dest && mv build/* ../resources/META-INF/resources"
+  },
+
+  "proxy": "http://localhost:8080/",
+  "devDependencies": {
+    "vite": "^5.3.6"
+  }
+}
